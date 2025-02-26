@@ -6,7 +6,7 @@ PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 PROJECT_NAME := $(shell basename $(subst -,_,$(PROJECT_DIR)))
 
 # --- Docs-related
-HUGO_WEBSITE_URL="http://localhost:1313/2025-02-GenAI-workshop-LLM-Deployment/"
+HUGO_LOCAL_WEBSITE_URL="http://localhost:1313/2025-02-GenAI-workshop-LLM-Deployment/"
 
 ###############################################################################
 #  VARIABLES FOR COMMANDS                                                     #
@@ -48,7 +48,7 @@ publish: clean
 
 ## Open local website
 view-website:
-	@	python -m webbrowser $(HUGO_WEBSITE_URL)
+	@	python -m webbrowser $(HUGO_LOCAL_WEBSITE_URL)
 
 ## Serve hugo website
 serve: clean view-website
