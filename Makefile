@@ -44,6 +44,7 @@ clean-build:
 ## Build and publish website
 publish: clean
 	@	bash $(PROJECT_DIR)/publish_to_gh_pages.sh
+	@	$(MAKE) clean
 
 ## Open local website
 view-website:
