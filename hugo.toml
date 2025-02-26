@@ -9,6 +9,8 @@ languageCode = "en-us"
 theme = 'hugo-theme-relearn'
 # Copyright
 copyright = "Copyright © 2025, Victor Calderon; All rights reserved."
+# Description of the site, will be used in meta information
+description = "Workshop for how to deploy LLMs as endpoints"
 
 # Language-specific
 DefaultContentLanguage = "en"
@@ -23,8 +25,7 @@ DefaultContentLanguage = "en"
     # Useful to give opportunity to people to create merge request for your doc.
     # See the config.toml file from this documentation site to have an example.
     editURL = ""
-    # Description of the site, will be used in meta information
-    description = "Workshop for how to deploy LLMs as endpoints"
+
     # Shows a checkmark for visited pages on the menu
     showVisitedLinks = true
     # Disable search function. It will hide search bar
