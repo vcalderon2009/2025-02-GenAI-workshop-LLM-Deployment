@@ -17,7 +17,9 @@ DefaultContentLanguage = "en"
 
 # For search functionality
 [outputs]
-    home = ["HTML", "RSS", "JSON"]
+    home = ["HTML", "RSS", "JSON", "markdown", "source"]
+    page = ["HTML", "RSS", "JSON", "markdown", "source"]
+    section = ["HTML", "RSS", "JSON", "markdown", "source"]
 
 # Parameters for the theme
 [params]
