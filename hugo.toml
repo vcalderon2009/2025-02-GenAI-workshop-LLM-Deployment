@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+# baseURL = 'https://example.org/'
 
-# baseURL = "https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/"
+baseURL = "https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/"
 languageCode = "en-us"
 title = "LLM Deployment - Workshop"
 
