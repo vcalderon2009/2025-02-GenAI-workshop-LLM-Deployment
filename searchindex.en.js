@@ -5,7 +5,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Categories",
-    "uri": "/categories/index.html"
+    "uri": "/2025-02-GenAI-workshop-LLM-Deployment/categories/index.html"
   },
   {
     "breadcrumb": "",
@@ -13,7 +13,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "LLM Deployment - Workshop",
-    "uri": "/index.html"
+    "uri": "/2025-02-GenAI-workshop-LLM-Deployment/index.html"
   },
   {
     "breadcrumb": "LLM Deployment - Workshop",
@@ -21,6 +21,6 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Tags",
-    "uri": "/tags/index.html"
+    "uri": "/2025-02-GenAI-workshop-LLM-Deployment/tags/index.html"
   }
 ]

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags :: LLM Deployment - Workshop</title>
-    <link>https://example.org/tags/index.html</link>
+    <link>https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/tags/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
