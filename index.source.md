@@ -6,13 +6,14 @@ chapter = false
 
 ## Main Details
 
-|               |                                                                                                                 |
-|---------------|-----------------------------------------------------------------------------------------------------------------|
-| Author        | **Victor Calderon** - [LinkedIn](https://www.linkedin.com/in/vcalderon/)                                        |
-| Date and Time | Feb 28th, 2025 @ 12pm PT                                                                                        |
-| Event Link    | [Partiful Invite](https://partiful.com/e/azs3LLkZ0TPzl89mXE7G)                                                  |
-| Github Repo   | [2025-02-GenAI-workshop-LLM-Deployment](https://github.com/vcalderon2009/2025-02-GenAI-workshop-LLM-Deployment) |
-| Documentation | https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/                                          |
+|               |                                                                                                                          |
+|---------------|--------------------------------------------------------------------------------------------------------------------------|
+| Author        | **Victor Calderon** - [LinkedIn](https://www.linkedin.com/in/vcalderon/)                                                 |
+| Date and Time | Feb 28th, 2025 @ 12pm PT                                                                                                 |
+| Event Link    | [Partiful Invite](https://partiful.com/e/azs3LLkZ0TPzl89mXE7G)                                                           |
+| Github Repo   | [2025-02-GenAI-workshop-LLM-Deployment](https://github.com/vcalderon2009/2025-02-GenAI-workshop-LLM-Deployment)          |
+| Documentation | https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/                                                   |
+| Slides        | [Google Slides](https://docs.google.com/presentation/d/1vWKqfVIUt9XfFALTZmrxMgnDlNtTf9Eb7cyaashjTvU/present?usp=sharing) |
 
 ## Description
 

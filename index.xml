@@ -3,7 +3,7 @@
   <channel>
     <title>LLM Deployment - Workshop</title>
     <link>https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/index.html</link>
-    <description>Main Details Author Victor Calderon - LinkedIn Date and Time Feb 28th, 2025 @ 12pm PT Event Link Partiful Invite Github Repo 2025-02-GenAI-workshop-LLM-Deployment Documentation https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/ Description The following workshop will cover examples and guides for how to deploy Large-Language Models (LLMs) into a production environment.&#xA;We’ll cover the following:&#xA;How to set up an endpoint in HuggingFace. How to use AWS infrastructure and Terraform to fully deploy a LLM into production. Setting up GitHub’s CICD to deploy such applications. Some of the tools that we’ll use in this workshop include, but not limited to:</description>
+    <description>Main Details Author Victor Calderon - LinkedIn Date and Time Feb 28th, 2025 @ 12pm PT Event Link Partiful Invite Github Repo 2025-02-GenAI-workshop-LLM-Deployment Documentation https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/ Slides Google Slides Description The following workshop will cover examples and guides for how to deploy Large-Language Models (LLMs) into a production environment.&#xA;We’ll cover the following:&#xA;How to set up an endpoint in HuggingFace. How to use AWS infrastructure and Terraform to fully deploy a LLM into production. Setting up GitHub’s CICD to deploy such applications. Some of the tools that we’ll use in this workshop include, but not limited to:</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2025, Victor Calderon; All rights reserved.</copyright>
