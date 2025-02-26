@@ -1,6 +1,22 @@
 var relearn_searchindex = [
   {
     "breadcrumb": "LLM Deployment - Workshop",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Introduction",
+    "uri": "/2025-02-GenAI-workshop-LLM-Deployment/introduction/index.html"
+  },
+  {
+    "breadcrumb": "LLM Deployment - Workshop",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Configuration",
+    "uri": "/2025-02-GenAI-workshop-LLM-Deployment/configuration/index.html"
+  },
+  {
+    "breadcrumb": "LLM Deployment - Workshop",
     "content": "The following set of lists are a set of useful links and resources that may come handy when dealing with data and trying to deploy LLMs into production.\nPython Packages Deployment strategies",
     "description": "The following set of lists are a set of useful links and resources that may come handy when dealing with data and trying to deploy LLMs into production.\nPython Packages Deployment strategies",
     "tags": [],
