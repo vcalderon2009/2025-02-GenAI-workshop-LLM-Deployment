@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Links and Resources :: LLM Deployment - Workshop</title>
+    <link>https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/resources/index.html</link>
+    <description>The following set of lists are a set of useful links and resources that may come handy when dealing with data and trying to deploy LLMs into production.&#xA;Python Packages Deployment strategies</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2025, Victor Calderon; All rights reserved.</copyright>
+    <atom:link href="https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/resources/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
