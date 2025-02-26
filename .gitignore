@@ -1,0 +1,9 @@
+public
+.env
+data
+*egg-info
+notebooks
+.envrc
+.python-version
+.hugo_build.lock
+.DS_Store
