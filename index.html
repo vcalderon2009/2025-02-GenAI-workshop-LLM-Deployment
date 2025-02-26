@@ -32,17 +32,19 @@ How to set up an endpoint in HuggingFace. How to use AWS infrastructure and Terr
     <title>LLM Deployment - Workshop</title>
     <link href="/2025-02-GenAI-workshop-LLM-Deployment/index.xml" rel="alternate" type="application/rss+xml" title="LLM Deployment - Workshop">
     <link href="/2025-02-GenAI-workshop-LLM-Deployment/index.json" rel="alternate" type="application/json" title="LLM Deployment - Workshop">
-    <link href="/2025-02-GenAI-workshop-LLM-Deployment/fonts/fontawesome/css/fontawesome-all.min.css?1740567027" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/2025-02-GenAI-workshop-LLM-Deployment/fonts/fontawesome/css/fontawesome-all.min.css?1740567027" rel="stylesheet"></noscript>
-    <link href="/2025-02-GenAI-workshop-LLM-Deployment/css/perfect-scrollbar/perfect-scrollbar.min.css?1740567027" rel="stylesheet">
-    <link href="/2025-02-GenAI-workshop-LLM-Deployment/css/theme.min.css?1740567027" rel="stylesheet">
-    <link href="/2025-02-GenAI-workshop-LLM-Deployment/css/format-html.min.css?1740567027" rel="stylesheet" id="R-format-style">
-    <link href="/2025-02-GenAI-workshop-LLM-Deployment/css/auto-complete/auto-complete.min.css?1740567027" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/2025-02-GenAI-workshop-LLM-Deployment/css/auto-complete/auto-complete.css?1740567027" rel="stylesheet"></noscript>
-    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/auto-complete/auto-complete.min.js?1740567027" defer></script>
-    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/lunr/lunr.min.js?1740567027" defer></script>
-    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/lunr/lunr.stemmer.support.min.js?1740567027" defer></script>
-    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/lunr/lunr.multi.min.js?1740567027" defer></script>
-    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/lunr/lunr.en.min.js?1740567027" defer></script>
-    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/search.min.js?1740567027" defer></script>
+    <link href="/2025-02-GenAI-workshop-LLM-Deployment/index.md" rel="alternate" type="text/markdown" title="LLM Deployment - Workshop">
+    <link href="/2025-02-GenAI-workshop-LLM-Deployment/index.source.md" rel="alternate" type="text/markdown" title="LLM Deployment - Workshop">
+    <link href="/2025-02-GenAI-workshop-LLM-Deployment/fonts/fontawesome/css/fontawesome-all.min.css?1740567828" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/2025-02-GenAI-workshop-LLM-Deployment/fonts/fontawesome/css/fontawesome-all.min.css?1740567828" rel="stylesheet"></noscript>
+    <link href="/2025-02-GenAI-workshop-LLM-Deployment/css/perfect-scrollbar/perfect-scrollbar.min.css?1740567828" rel="stylesheet">
+    <link href="/2025-02-GenAI-workshop-LLM-Deployment/css/theme.min.css?1740567828" rel="stylesheet">
+    <link href="/2025-02-GenAI-workshop-LLM-Deployment/css/format-html.min.css?1740567828" rel="stylesheet" id="R-format-style">
+    <link href="/2025-02-GenAI-workshop-LLM-Deployment/css/auto-complete/auto-complete.min.css?1740567828" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/2025-02-GenAI-workshop-LLM-Deployment/css/auto-complete/auto-complete.css?1740567828" rel="stylesheet"></noscript>
+    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/auto-complete/auto-complete.min.js?1740567828" defer></script>
+    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/lunr/lunr.min.js?1740567828" defer></script>
+    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/lunr/lunr.stemmer.support.min.js?1740567828" defer></script>
+    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/lunr/lunr.multi.min.js?1740567828" defer></script>
+    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/lunr/lunr.en.min.js?1740567828" defer></script>
+    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/search.min.js?1740567828" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -51,7 +53,7 @@ How to set up an endpoint in HuggingFace. How to use AWS infrastructure and Terr
       window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/vcalderon2009.github.io\/2025-02-GenAI-workshop-LLM-Deployment';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/2025-02-GenAI-workshop-LLM-Deployment/searchindex.en.js?1740567027";
+      window.relearn.index_js_url="/2025-02-GenAI-workshop-LLM-Deployment/searchindex.en.js?1740567828";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -122,6 +124,10 @@ How to set up an endpoint in HuggingFace. How to use AWS infrastructure and Terr
             LLM Deployment - Workshop
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-source" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/2025-02-GenAI-workshop-LLM-Deployment/index.source.md" title="Show source code"><i class="fa-fw fas fa-code"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-markdown" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/2025-02-GenAI-workshop-LLM-Deployment/index.md" title="Show Markdown"><i class="fa-fw fab fa-markdown"></i></a>
+            </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
@@ -226,8 +232,12 @@ corresponding branches.</p>
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-shortcutmenu-home" class="R-sidebarmenu">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/2025-02-GenAI-workshop-LLM-Deployment/introduction/index.html"><a class="padding" href="/2025-02-GenAI-workshop-LLM-Deployment/introduction/index.html"><i class='fa-fw fas fa-star'></i> Introduction<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/2025-02-GenAI-workshop-LLM-Deployment/configuration/index.html"><a class="padding" href="/2025-02-GenAI-workshop-LLM-Deployment/configuration/index.html"><i class='fa-fw fas fa-gears'></i> Configuration<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/2025-02-GenAI-workshop-LLM-Deployment/introduction/index.html"><input type="checkbox" id="R-section-e1ed3a04f1f57a27be4a8d0eb274be18" aria-controls="R-subsections-e1ed3a04f1f57a27be4a8d0eb274be18"><label for="R-section-e1ed3a04f1f57a27be4a8d0eb274be18"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Introduction</span></label><a class="padding" href="/2025-02-GenAI-workshop-LLM-Deployment/introduction/index.html"><i class='fa-fw fas fa-star'></i> Introduction<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e1ed3a04f1f57a27be4a8d0eb274be18" class="collapsible-menu">
+            <li class="" data-nav-id="/2025-02-GenAI-workshop-LLM-Deployment/introduction/getting_started/index.html"><a class="padding" href="/2025-02-GenAI-workshop-LLM-Deployment/introduction/getting_started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/2025-02-GenAI-workshop-LLM-Deployment/configuration/index.html"><input type="checkbox" id="R-section-6f6dce359ca8d596b5b1de1969a0aca2" aria-controls="R-subsections-6f6dce359ca8d596b5b1de1969a0aca2"><label for="R-section-6f6dce359ca8d596b5b1de1969a0aca2"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration</span></label><a class="padding" href="/2025-02-GenAI-workshop-LLM-Deployment/configuration/index.html"><i class='fa-fw fas fa-gears'></i> Configuration<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-6f6dce359ca8d596b5b1de1969a0aca2" class="collapsible-menu">
+            <li class="" data-nav-id="/2025-02-GenAI-workshop-LLM-Deployment/configuration/github/index.html"><a class="padding" href="/2025-02-GenAI-workshop-LLM-Deployment/configuration/github/index.html">GitHub<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/2025-02-GenAI-workshop-LLM-Deployment/configuration/aws/index.html"><a class="padding" href="/2025-02-GenAI-workshop-LLM-Deployment/configuration/aws/index.html">AWS<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/2025-02-GenAI-workshop-LLM-Deployment/configuration/hugginface/index.html"><a class="padding" href="/2025-02-GenAI-workshop-LLM-Deployment/configuration/hugginface/index.html">HugginFace<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
             <li class="" data-nav-id="/2025-02-GenAI-workshop-LLM-Deployment/resources/index.html"><a class="padding" href="/2025-02-GenAI-workshop-LLM-Deployment/resources/index.html"><i class='fa fa-bolt'></i> Links and Resources<i class="fa-fw fas fa-check read-icon"></i></a></li>
           </ul>
         </div>
@@ -289,8 +299,8 @@ corresponding branches.</p>
         </div>
       </div>
     </aside>
-    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/clipboard/clipboard.min.js?1740567027" defer></script>
-    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/perfect-scrollbar/perfect-scrollbar.min.js?1740567027" defer></script>
-    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/theme.min.js?1740567027" defer></script>
+    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/clipboard/clipboard.min.js?1740567828" defer></script>
+    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/perfect-scrollbar/perfect-scrollbar.min.js?1740567828" defer></script>
+    <script src="/2025-02-GenAI-workshop-LLM-Deployment/js/theme.min.js?1740567828" defer></script>
   </body>
 </html>

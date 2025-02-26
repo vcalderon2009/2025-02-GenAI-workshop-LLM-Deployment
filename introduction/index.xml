@@ -7,7 +7,14 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2025, Victor Calderon; All rights reserved.</copyright>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2025 01:08:13 -0800</lastBuildDate>
     <atom:link href="https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/introduction/getting_started/index.html</link>
+      <pubDate>Wed, 26 Feb 2025 01:08:13 -0800</pubDate>
+      <guid>https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/introduction/getting_started/index.html</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
