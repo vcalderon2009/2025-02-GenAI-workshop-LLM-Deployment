@@ -1,4 +1,4 @@
-# GenAI Workship - LLM Deployment
+# GenAI Workshop - LLM Deployment
 
 The following workshop covers examples and guides for how to deploy a
 *Large Language Model* (LLM) into a production-like environment. The
