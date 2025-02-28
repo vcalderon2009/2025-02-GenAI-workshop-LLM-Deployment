@@ -1,0 +1,81 @@
+name: App Deployment
+run-name: App Deployment
+on:
+  push:
+    branches:
+      - 'main'
+      - 'prod'
+      - 'develop'
+      - 'releases/**'
+
+env:
+  AWS_REGION : "${{ secrets.aws_region }}"
+  AWS_ROLE : "arn:aws:iam::${{ secrets.aws_account_id }}:role/github-actions-runner-prod"
+  AWS_SESSION_NAME : GitHub_to_AWS_via_FederatedOIDC_CICD
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  app-infra-deployment:
+    runs-on: ubuntu-latest
+    # needs: lint-code
+    steps:
+      # Initializing repository
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+
+      # Configuring AWS credentials
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1.7.0
+        with:
+          role-to-assume: ${{ env.AWS_ROLE }}
+          role-session-name: ${{ env.AWS_SESSION_NAME }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      # Checking that the job assumed the AWS Role correctly
+      - name: Sts GetCallerIdentity
+        run: |
+          aws sts get-caller-identity
+
+      # Installing Terraform
+      - name: Terraform Install
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.3.7
+
+      # Initializing Terraform deployment
+      - name: Deploy to environment
+        run: |
+          cd infra/terraform && \
+          make deploy ENV="prod"
+
+  # --- Deploying the Docker image for the FastAPI application
+  api-deployment:
+    runs-on: ubuntu-latest
+    needs: app-infra-deployment
+    steps:
+      # Initializing repository
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+
+      # Configuring AWS credentials
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1.7.0
+        with:
+          role-to-assume: ${{ env.AWS_ROLE }}
+          role-session-name: ${{ env.AWS_SESSION_NAME }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      # Checking that the job assumed the AWS Role correctly
+      - name: Sts GetCallerIdentity
+        run: |
+          aws sts get-caller-identity
+
+      # Build and deploy images
+      - name: Building and Deploying application's Docker image
+        run: |
+          cd api && \
+          make deployment-image-push \
+          ENV="prod"

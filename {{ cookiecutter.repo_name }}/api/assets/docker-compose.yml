@@ -1,0 +1,56 @@
+version: "3"
+
+services:
+  # --- Service used for local development
+  local-dev:
+    # Building the local image
+    build:
+      context: ../
+      dockerfile: ./assets/Dockerfile
+    # Running the local image
+    image: "sample_api-local-dev"
+    container_name: "sample_api-local-dev"
+    environment:
+      DOCKER_BUILDKIT_VALUE: ${DOCKER_BUILDKIT_VALUE}
+      HUGGINGFACE_API_TOKEN: ${HUGGINGFACE_API_TOKEN}
+    volumes:
+      - ${HOME}/.ssh:/root/.ssh
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ../..:/project
+      - ..:/app
+    working_dir: /project
+    command: ["/bin/sleep", "365d"]
+  #
+  # --- Service for running the API locally
+  api:
+    # Building the local image
+    build:
+      context: ../
+      dockerfile: ./assets/Dockerfile
+    # Running the local image
+    image: "sample_api-api"
+    container_name: "sample_api-api"
+    environment:
+      HUGGINGFACE_API_TOKEN: ${HUGGINGFACE_API_TOKEN}
+      HF_CREDENTIALS_SECRET_NAME: ${HF_CREDENTIALS_SECRET_NAME}
+      AWS_REGION: ${AWS_REGION}
+      AWS_PROFILE: ${AWS_PROFILE}
+    volumes:
+      - ../..:/project
+      - ..:/app
+      - ${HOME}/.aws:/root/.aws
+    ports:
+      - ${INPUT_APP_PORT:-8000}:${OUTPUT_APP_PORT:-8000}
+    working_dir: /app
+    command:
+      [
+        "uvicorn",
+        "app.main:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000",
+        "--reload",
+        "--reload-dir",
+        "/app",
+      ]

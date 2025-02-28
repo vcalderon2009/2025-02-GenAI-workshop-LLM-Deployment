@@ -1,0 +1,11 @@
+awscli>=1.19.4
+boto3>=1.17.4
+docker>=5.0.3
+numpy>= 1.20.1
+pandas>=1.2.4
+protobuf>=3.20.1
+pydash>=7.0.6
+pyyaml>=5.3.1
+setuptools>=47.1.0
+tables>=3.6.1
+wheel>=0.37.1

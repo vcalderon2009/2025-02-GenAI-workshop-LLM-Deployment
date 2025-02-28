@@ -1,0 +1,30 @@
+{
+    "project_name": "project_name",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "application_name": "{{ cookiecutter.repo_name }}.replace('_', '-')",
+    "app_service_name" : "{{ cookiecutter.repo_name }}_microservice",
+    "author_name": "Your name (or your organization/company/team)",
+    "author_email": "Your email address",
+    "short_description": "A short description of the project.",
+    "long_description": "",
+    "open_source_license": ["MIT", "Apache Software Licence 2.0", "BSD 2-Clause", "General"],
+    "aws_profile": "default",
+    "aws_region": "us-west-2",
+    "aws_account_id": "AWS Account ID",
+    "github_username": "your_github_username",
+    "github_project": "{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}",
+    "project_version": "0.1.dev0",
+    "project_url": "https://github.com/{{cookiecutter.github_project}}",
+    "minimum_python_version": ["3.9", "3.12"],
+    "python_interpreter": ["python3"],
+    "_copy_without_render": [
+        ".gitignore",
+        "requirements.txt",
+        "Makefile",
+        "deploy-app.yml",
+        ".github/deploy-app.yml",
+        "code-linting.yml",
+        ".github/code-linting.yml",
+        "*.tf"
+    ]
+}

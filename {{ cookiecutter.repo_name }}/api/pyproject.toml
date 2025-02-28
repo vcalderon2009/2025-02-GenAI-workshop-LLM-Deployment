@@ -1,0 +1,44 @@
+[tool.poetry]
+authors = ["{{ cookiecutter.author_name }}"]
+description = "{{ cookiecutter.short_description }}"
+name = "{{ cookiecutter.application_name }}"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.scripts]
+dev = "app.main:dev"
+start = "app.main:start"
+
+[tool.poetry.dependencies]
+faiss-cpu = "^1.7.4"
+fastapi = "^0.103.1"
+jq = "^1.5.0"
+langchain = "^0.0.279"
+loguru = "^0.7.0"
+openai = "^0.28.0"
+structlog = "^25.1.0"
+python = "^3.11"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+transformers = "^4.49.0"
+torch = "2.1.2"
+boto3 = "^1.37.3"
+botocore = "^1.37.3"
+docker = "7.1.0"
+pydash = "^8.0.5"
+requests = "<2.30"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^9.0.0"
+pre-commit = "^4.1.0"
+isort = "^6.0.1"
+black = "^25.1.0"
+flake8 = "^7.1.2"
+autoflake = "^2.3.1"
+
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]

@@ -1,31 +1,31 @@
-# GenAI Workship - LLM Deployment
+# FastAPI to AWS Deployment - Cookiecutter template
 
-The following workshop covers examples and guides for how to deploy a
-*Large Language Model* (LLM) into a production-like environment. The
-general topics that will covered include:
+This project provides a cookiecutter template to jumpstart a FastAPI
+application with the idea to deploy it to AWS via Github's CICD.
 
-- How to set up an endpoint in [Hugging Face](https://huggingface.co/).
-- How to set up an AWS infrastructure to publish your endpoint using common
-    tools such as *Terraform*, *Docker*, *FastAPI*, etc.
-- Deploy your application via GIthub's CICD, and more.
+The template provides an initial foundation for building, packaging, and
+deploying a FastAPI application to AWS via the creation of the corresponding
+Docker images and python packages and applications.
 
-
-> :exclamation: Keep in mind that this are only examples, and there may be
-    manu nuances about deploying into `production` that may not be covered
-    in this workshop.
-
-For more details about the rest of the workshop and about setting up
-the correct environments and accounts, please go to the workshop's
-main website listed in the next section.
+## Key Features
 
 
-## Main Details
+## Quick Start
 
-|               |                                                                                                                          |
-|---------------|--------------------------------------------------------------------------------------------------------------------------|
-| Author        | **Victor Calderon** - [LinkedIn](https://www.linkedin.com/in/vcalderon/)                                                 |
-| Date and Time | Feb 28th, 2025 @ 12pm PT                                                                                                 |
-| Event Link    | [Partiful Invite](https://partiful.com/e/azs3LLkZ0TPzl89mXE7G)                                                           |
-| Github Repo   | [2025-02-GenAI-workshop-LLM-Deployment](https://github.com/vcalderon2009/2025-02-GenAI-workshop-LLM-Deployment)          |
-| Documentation | [https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/](https://vcalderon2009.github.io/2025-02-GenAI-workshop-LLM-Deployment/)                                                   |
-| Slides        | [Google Slides](https://docs.google.com/presentation/d/1vWKqfVIUt9XfFALTZmrxMgnDlNtTf9Eb7cyaashjTvU/present?usp=sharing) |
+1. Install `cookiecutter` to your main Python environment
+    ```
+    pip install cookiecutter
+    ```
+
+2. Create a new cookiecutter template from this repository by using the
+    `aws-terraform-deployment-template` branch from the main repository.
+    ```
+    cookiecutter https://github.com/vcalderon2009/2025-02-GenAI-workshop-LLM-Deployment.git --checkout aws-terraform-deployment-template
+    ```
+
+3. Fill in the project's metadata.
+
+4. Go into the repository and check that the files and directories were
+    correctly created and named properly.
+
+

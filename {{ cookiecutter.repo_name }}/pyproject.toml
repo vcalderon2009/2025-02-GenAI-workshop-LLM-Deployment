@@ -1,0 +1,35 @@
+[tool.isort]
+profile = "black"
+force_grid_wrap = 0
+include_trailing_comma = true
+line_length = 79
+multi_line_output = 3
+use_parentheses = true
+
+[tool.pytest.ini_options]
+addopts = """
+--cov-report term-missing \
+--cov src/ -ra"""
+
+[tool.black]
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  # The following are specific to Black, you probably don't want those.
+  | blib2to3
+  | tests/data
+  | profiling
+)/
+'''
+include = '\.pyi?$'
+line-length = 79
+target-version = ['py39', 'py310', 'py311', 'py312']
